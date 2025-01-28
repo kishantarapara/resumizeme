@@ -1,0 +1,25 @@
+.my-input {
+  flex-grow: 1;
+  fieldset {
+    border-radius: 5px;
+    cursor: text;
+    border: 1px solid #b4b4b5;
+  }
+
+  fieldset legend {
+    margin: 0 10px;
+    padding: 0 2px;
+  }
+
+  &:focus-within fieldset {
+    border-color: #000; /* New border color on focus */
+    color: #000;
+  }
+
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0px 10px 10px 10px;
+  }
+}

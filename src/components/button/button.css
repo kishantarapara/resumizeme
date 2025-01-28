@@ -1,0 +1,12 @@
+.primary {
+  background-color: #1688fe;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 15px 80px;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+button {
+  cursor: pointer;
+}
