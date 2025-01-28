@@ -1,7 +1,6 @@
 button.primary {
-  background-color: #1688fe;
+  background-color: var(--primary-color);
   color: #ffffff;
-  
 }
 
 button {

@@ -1,7 +1,7 @@
 import "./button.css";
-const Button = ({ children, type = "primary", ...props }) => {
+const Button = ({ children, version = "primary", ...props }) => {
   return (
-    <button className={type} {...props}>
+    <button className={version} {...props}>
       {children}
     </button>
   );

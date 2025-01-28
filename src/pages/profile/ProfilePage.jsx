@@ -25,7 +25,7 @@ export default function ProfilePage() {
           systems - you can’t undo it.
         </Card.Body>
         <Card.Footer>
-          <Button type="link">Yes, Delete my account</Button>
+          <Button version="link">Yes, Delete my account</Button>
         </Card.Footer>
       </Card>
       <div className="support-line">

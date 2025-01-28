@@ -10,7 +10,7 @@
   align-items: center;
   gap: 15px;
   padding: 20px;
-  background-color: #008b5d;
+  background-color: var(--green);
   color: #ffffff;
   border-radius: 8px;
 }
@@ -18,7 +18,7 @@
 .premium-account-icon {
   padding: 10px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: var(--background-color);
   min-width: 50px;
   display: flex;
   justify-content: center;
@@ -43,12 +43,11 @@
   gap: 15px;
 }
 
-.form-container {
-  display: flex;
-  flex-direction: column;
+.form-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-  flex-grow: 1;
-  flex-wrap: wrap;
 }
 
 .form-image-container {
@@ -57,13 +56,8 @@
   margin-top: 20px;
 }
 
-.form-row {
-  display: flex;
-  gap: 10px;
-}
-
-.form-col {
-  width: 50%;
+.address {
+  grid-column: span 2;
 }
 
 .form-image {
@@ -82,7 +76,7 @@
 }
 
 .profile-footer {
-  border-top: 1px solid #ececed;
+  border-top: 1px solid var(--border-color);
 }
 
 .profile-footer-list {
@@ -93,12 +87,27 @@
 }
 
 .profile-footer-list-item {
-  color: #79797a
+  color: var(--secondary-color);
 }
 
 @media screen and (max-width: 1000px) {
   .form-image-container {
     flex-direction: column-reverse;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .address {
+    grid-column: span 1;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .premium-account-card {
+    flex-direction: column;
   }
 }

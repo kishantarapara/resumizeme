@@ -2,7 +2,11 @@
   min-width: 250px;
   border-right: 1px;
   padding-top: 10px;
-  border-right: 1px solid #ececed;
+  border-right: 1px solid var(--border-color);
+  z-index: 1000;
+  background-color: var(--background-color);
+  overflow: scroll;
+  scrollbar-width: none;
 }
 
 .column-flex {
@@ -19,8 +23,10 @@
 }
 
 .logo {
-  border-bottom: 1px solid #ececed;
+  border-bottom: 1px solid var(--border-color);
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu-item {
@@ -36,7 +42,7 @@
 }
 
 .sidebar-footer {
-  border-top: 1px solid #ececed;
+  border-top: 1px solid var(--border-color);
   padding: 10px;
 }
 
@@ -48,4 +54,43 @@
 
 .gap-10 {
   gap: 10px;
+}
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.sidebar-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (max-width: 750px) {
+  .sidebar-container.hide {
+    display: none;
+  }
+  .sidebar-container.show {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+}
+@media screen and (min-width: 750px) {
+  .navbar {
+    display: none;
+  }
+  .sidebar-overlay {
+    display: none;
+  }
 }
