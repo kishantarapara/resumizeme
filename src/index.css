@@ -1,4 +1,10 @@
-@import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}

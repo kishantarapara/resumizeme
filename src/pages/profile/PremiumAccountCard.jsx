@@ -4,10 +4,10 @@ const PremiumAccountCard = () => {
   return (
     <div className="premium-account-card">
       <div className="premium-account-icon">
-        <img src={career} height={100} width={100} />
+        <img src={career} />
       </div>
       <div>
-        <h4 className="title">Premium Account</h4>
+        <div className="title">Premium Account</div>
         <p className="premium-account-card-desc">
           You have a premium account, granting you access to all the remarkable
           features offered by ResumeDone. With this privilege, you can indulge

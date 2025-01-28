@@ -8,7 +8,7 @@
 .premium-account-card {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   padding: 20px;
   background-color: #008b5d;
   color: #ffffff;
@@ -20,6 +20,9 @@
   border-radius: 50%;
   background-color: #ffffff;
   min-width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
@@ -45,6 +48,7 @@
   flex-direction: column;
   gap: 10px;
   flex-grow: 1;
+  flex-wrap: wrap;
 }
 
 .form-image-container {
@@ -71,4 +75,30 @@
 
 .form-note {
   margin: 15px 0;
+}
+
+.show-profile-checkbox {
+  margin: 15px 0;
+}
+
+.profile-footer {
+  border-top: 1px solid #ececed;
+}
+
+.profile-footer-list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+.profile-footer-list-item {
+  color: #79797a
+}
+
+@media screen and (max-width: 1000px) {
+  .form-image-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }

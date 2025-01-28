@@ -1,12 +1,21 @@
-.primary {
+button.primary {
   background-color: #1688fe;
   color: #ffffff;
+  
+}
+
+button {
+  border: none;
   border-radius: 5px;
-  padding: 15px 80px;
+  cursor: pointer;
+  min-width: 150px;
+  padding: 12px;
   font-size: 15px;
   line-height: 15px;
 }
 
-button {
-  cursor: pointer;
+button.link {
+  background-color: transparent;
+  color: red;
+  padding: 12px 0;
 }

@@ -21,7 +21,7 @@ const PersonalInfoForm = () => {
             <TextInput label="Address" placeholder="123 Example" />
           </div>
           <div className="form-row">
-            <TextInput label="Email" placeholder="petter@gmail.com" />
+            <TextInput label="Email" placeholder="petter@gmail.com" validated />
             <TextInput label="Phone" placeholder="+442223334444" />
           </div>
           <div className="form-row">
